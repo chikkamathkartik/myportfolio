@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap'); /* Import fonts */
+
+/* Apply fonts globally and to specific elements */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font for body */
+    background: linear-gradient(135deg, #E8F1F2, #A9CCE3); /* Soft blue gradient */
+    color: #333; /* Dark gray */
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    font-family: 'Lora', serif; /* Elegant serif font for header */
+    background-color: #34495E; /* Deep navy blue */
+    color: #ECF0F1; /* Light gray */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideDown 1s ease-out;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif; /* Consistent sans-serif for navigation */
+    background: linear-gradient(90deg, #2ECC71, #1ABC9C); /* Green gradient */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in;
+}
+
+.main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-nav a {
+    font-family: 'Roboto', sans-serif;
+    color: #ECF0F1; /* Light gray */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: #34495E; /* Deep navy blue */
+    color: #FFFFFF; /* White */
+    transform: translateY(-5px);
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-content {
+    font-family: 'Lora', serif; /* Elegant font for main content */
+    background: rgba(255, 255, 255, 0.95); /* White with slight transparency */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    line-height: 1.8;
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: center;
+}
+
+#typewriter {
+    font-family: 'Roboto', sans-serif; /* Simple and clean sans-serif */
+    overflow: hidden;
+    border-right: 2px solid #E74C3C; /* Red cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
